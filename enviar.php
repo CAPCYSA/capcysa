@@ -39,8 +39,9 @@ $mail->Subject = 'Servicio de Consulta de CAPCYSA DE RL';
 //Replace the plain text body with one created manually
 $mail->AltBody = $carta;
 $mail->Body = $carta;
-
+$mail->send()
 //send the message, check for errors
+/**
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
@@ -51,7 +52,7 @@ if (!$mail->send()) {
     #    echo "Message saved!";
     #}
 }
-/**function save_mail($mail)
+function save_mail($mail)
 {
     //You can change 'Sent Mail' to any other folder or tag
     $path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
