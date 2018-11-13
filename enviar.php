@@ -40,6 +40,7 @@ $mail->Subject = 'Servicio de Consulta de CAPCYSA DE RL';
 $mail->AltBody = $carta;
 $mail->Body = $carta;
 $mail->send()
+header('Location: message-send.html');
 //send the message, check for errors
 /**
 if (!$mail->send()) {
