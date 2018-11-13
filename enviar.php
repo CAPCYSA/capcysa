@@ -39,10 +39,9 @@ $mail->Subject = 'Servicio de Consulta de CAPCYSA DE RL';
 //Replace the plain text body with one created manually
 $mail->AltBody = $carta;
 $mail->Body = $carta;
-$mail->send()
-header('Location: message-send.html');
+
 //send the message, check for errors
-/**
+
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
@@ -61,7 +60,8 @@ function save_mail($mail)
     $imapStream = imap_open($path, $mail->Username, $mail->Password);
     $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
     imap_close($imapStream);
-    return $result;
-}*/
+    header('Location: message-send.html');
+    //return $result;
+}
 
 ?>
