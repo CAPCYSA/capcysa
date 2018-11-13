@@ -51,7 +51,7 @@ if (!$mail->send()) {
     #    echo "Message saved!";
     #}
 }
-function save_mail($mail)
+/**function save_mail($mail)
 {
     //You can change 'Sent Mail' to any other folder or tag
     $path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
@@ -60,6 +60,6 @@ function save_mail($mail)
     $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
     imap_close($imapStream);
     return $result;
-}
+}*/
 
 ?>
