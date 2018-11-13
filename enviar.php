@@ -35,6 +35,7 @@ $mail->setFrom('capcysa@gmail.com', 'CAPCYSA PAGE');
 //Set who the message is to be sent to
 $mail->addAddress('capcysa@gmail.com');
 $mail->addAddress('pul98alvarenga@yahoo.es');               // Name is optional
+$mail->addAddress('capcysaderl@yahoo.es');
 //Set the subject line
 $mail->Subject = 'Servicio de Consulta de CAPCYSA DE RL';
 //Replace the plain text body with one created manually
