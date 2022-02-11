@@ -33,9 +33,9 @@ $mail->Password = "#Logeado12";
 $mail->setFrom('capcysa@gmail.com', 'CAPCYSA PAGE');
 //Set an alternative reply-to address
 //Set who the message is to be sent to
-$mail->addAddress('capcysa@gmail.com');
-$mail->addAddress('pul98alvarenga@yahoo.es');               // Name is optional
-$mail->addAddress('capcysaderl@yahoo.com');
+//$mail->addAddress('capcysa@gmail.com');
+$mail->addAddress('sbonilla2398@gmail.com');               // Name is optional
+//$mail->addAddress('capcysaderl@yahoo.com');
 //Set the subject line
 $mail->Subject = 'Servicio de Consulta de CAPCYSA DE RL';
 //Replace the plain text body with one created manually
